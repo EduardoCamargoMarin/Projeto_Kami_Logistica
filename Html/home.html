@@ -9,11 +9,11 @@
 </head>
 <body>
     <header>
-        <a href="#sobreNos"><button>Sobre nós</button></a>
-        <a href="#servicos"><button>Serviços</button></a>
-        <a href="#transportes"><button>Transportes</button></a>
-        <a href="#fornecedores"><button>Fornecedores</button></a>
-        <a href="#contato"><button>Contato</button></a>
+        <a href="#sobreNos"><button class="btn-header">Sobre nós</button></a>
+        <a href="#servicos"><button class="btn-header">Serviços</button></a>
+        <a href="#transportes"><button class="btn-header">Transportes</button></a>
+        <a href="#fornecedores"><button class="btn-header">Fornecedores</button></a>
+        <a href="#contato"><button class="btn-header">Contato</button></a>
     </header>
     <main>
         <div class="container-image">
@@ -24,18 +24,21 @@
             <div class="info-title"><h1 id="sobreNos"><i><img class="logo-icon" style="width: 35px;" src="/image/logo.jpeg" alt=""></i> Sobre nós</h1></div>
             <div class="info-body">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis vitae earum necessitatibus culpa aspernatur quos quia error. Facilis nam perferendis enim praesentium inventore obcaecati, commodi suscipit distinctio omnis eveniet ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nobis ab necessitatibus aspernatur accusamus. Reiciendis maxime minima quidem perspiciatis voluptates illum sequi excepturi nemo, molestias, sapiente, impedit alias unde commodi.</p>
-                <div class="card">
-                    <div class="card-title"><h3>Missão</h3></div>
-                    <div class="card-body">This is a example of mission, it's important to say whats the main goal of your company</div>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-title"><h3>Missão</h3></div>
+                        <div class="card-body">This is a example of mission, it's important to say whats the main goal of your company</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-title"><h3>Visão</h3></div>
+                        <div class="card-body">This is a example of mission, it's important to say whats the main goal of your company</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-title"><h3>Valores</h3></div>
+                        <div class="card-body">This is a example of mission, it's important to say whats the main goal of your company</div>
+                    </div>
                 </div>
-                <div class="card">
-                    <div class="card-title"><h3>Visão</h3></div>
-                    <div class="card-body">This is a example of mission, it's important to say whats the main goal of your company</div>
-                </div>
-                <div class="card">
-                    <div class="card-title"><h3>Valores</h3></div>
-                    <div class="card-body">This is a example of mission, it's important to say whats the main goal of your company</div>
-                </div>
+
             </div>
         </div>
         <div class="line-division"></div>
@@ -43,49 +46,30 @@
             <div class="info-title"><h1 id="servicos"><i><img class="logo-icon" style="width: 35px;" src="/image/logo.jpeg" alt=""></i>Serviços</h1></div>
             <div class="info-body">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis vitae earum necessitatibus culpa aspernatur quos quia error. Facilis nam perferendis enim praesentium inventore obcaecati, commodi suscipit distinctio omnis eveniet ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nobis ab necessitatibus aspernatur accusamus. Reiciendis maxime minima quidem perspiciatis voluptates illum sequi excepturi nemo, molestias, sapiente, impedit alias unde commodi.</p>
-                <div class="simulation-service">
-                    <h2>Simulação de envio</h2>
-                    <label>Transporte (Tam. do pacote):</label><br>
-                    <input type="radio" name="package">Pequeno (max. 50kg) |
-                    <input type="radio" name="package">Médio (max. 100kg) |
-                    <input type="radio" name="package">Grande (max. 250kg) <br>
-                    <label>Local da entrega (Setor):</label><br>
-                    <input type="radio" name="local">Região interna |
-                    <input type="radio" name="local">Zona Rural |
-                    <input type="radio" name="local">Região externa |
-                    <input type="radio" name="local">cidades proximas<br>
-                    <label>Tipo do pacote:</label><br>
-                    <input type="radio" name="local">Frágil |
-                    <input type="radio" name="local">Robusto |
-                    <input type="radio" name="local">Documentos / Malotes |
-                    <input type="radio" name="local">Quimicos <br>
-                    <label>Prazo da entrega:</label><br>
-                    <input type="radio" name="local">Urgente (no mesmo dia) |
-                    <input type="radio" name="local">Rápida (1 ~ 2 dias)|
-                    <input type="radio" name="local">Padrão (até 3 dias) 
-                    <div class="info-simulator">
-                        <h3></h3>
-                        <h3></h3>
-                        <h3></h3>
-                        <h3></h3>
-                    </div>
-                </div>
+                <a href="/Html/simulator.html"><button class="btn-simulation">Simulação do envio</button></a>
             </div>
         </div>
         <div class="line-division"></div>
         <div class="main-info">
             <div class="info-title"><h1 id="transportes"><i><img class="logo-icon" style="width: 35px;" src="/image/logo.jpeg" alt=""></i>Transportes</h1></div>
-            <div class="info-body"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis vitae earum necessitatibus culpa aspernatur quos quia error. Facilis nam perferendis enim praesentium inventore obcaecati, commodi suscipit distinctio omnis eveniet ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nobis ab necessitatibus aspernatur accusamus. Reiciendis maxime minima quidem perspiciatis voluptates illum sequi excepturi nemo, molestias, sapiente, impedit alias unde commodi.</p></div>
+            <div class="info-body">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis vitae earum necessitatibus culpa aspernatur quos quia error. Facilis nam perferendis enim praesentium inventore obcaecati, commodi suscipit distinctio omnis eveniet ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nobis ab necessitatibus aspernatur accusamus. Reiciendis maxime minima quidem perspiciatis voluptates illum sequi excepturi nemo, molestias, sapiente, impedit alias unde commodi.</p>
+                <div class="container-transport">
+                    <a href=""><button class="btn-simulation">Seja um transportador</button></a>
+                </div>
+            </div>
         </div>
         <div class="line-division"></div>
         <div class="main-info">
             <div class="info-title"><h1 id="fornecedores"><i><img class="logo-icon" style="width: 35px;" src="/image/logo.jpeg" alt=""></i>Fornecedores</h1></div>
             <div class="info-body"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis vitae earum necessitatibus culpa aspernatur quos quia error. Facilis nam perferendis enim praesentium inventore obcaecati, commodi suscipit distinctio omnis eveniet ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nobis ab necessitatibus aspernatur accusamus. Reiciendis maxime minima quidem perspiciatis voluptates illum sequi excepturi nemo, molestias, sapiente, impedit alias unde commodi.</p></div>
+            <a href=""><button class="btn-simulation">Conheça nossos fornecedores</button></a>
         </div>
         <div class="line-division"></div>
         <div class="main-info">
             <div class="info-title"><h1 id="contato"><i><img class="logo-icon" style="width: 35px;" src="/image/logo.jpeg" alt=""></i>Contato</h1></div>
             <div class="info-body"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis vitae earum necessitatibus culpa aspernatur quos quia error. Facilis nam perferendis enim praesentium inventore obcaecati, commodi suscipit distinctio omnis eveniet ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nobis ab necessitatibus aspernatur accusamus. Reiciendis maxime minima quidem perspiciatis voluptates illum sequi excepturi nemo, molestias, sapiente, impedit alias unde commodi.</p></div>
+            <a href=""><button class="btn-simulation">Solicitação de envio</button></a>
         </div>
         <div class="line-division"></div>
         <div class="container-image">
@@ -107,6 +91,7 @@
             </nav>
         </div>
     </footer>
+
     
 </body>
 </html>

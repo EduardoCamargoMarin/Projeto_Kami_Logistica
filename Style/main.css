@@ -5,6 +5,7 @@
 }
 
 body {
+    cursor: url(/cursor1.cur),default;
     flex-wrap: wrap;
     background-color: #f7f8ff;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -60,16 +61,17 @@ header {
 }
 
 
-button {
-    cursor: pointer;
+.btn-header {
+    cursor: url(/cursor3.cur), pointer;
     color: white;
     font-size: 11pt;
     background-color: black;
     border: 3px solid black;
     transition: 0.2s;
+
 }
 
-button:hover {
+.btn-header:hover {
     border-bottom: 3px solid white;
 }
 
@@ -88,10 +90,43 @@ button:hover {
     line-height: 40px;
 }
 
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 130px;
+}
+
 .card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
     margin-top: 40px;
     line-height: 40px;
 }
+
+.btn-simulation {
+    cursor: url(/cursor3.cur), pointer;
+    margin-top: 30px;
+    background-color: black;
+    color: white;
+    font-size: 15pt;
+    width: 15em;
+    border-radius: 50px 20px;
+    transition: .5s;
+    border: 2px solid gray;
+
+}
+
+.btn-simulation:hover {
+    background-color: white;
+    color: black;
+}
+
+
 
 footer {
     display: flex;

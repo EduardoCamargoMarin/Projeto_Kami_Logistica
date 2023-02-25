@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Style/simulator.css">
+    <title>Kami Logistica</title>
+</head>
+<body>
+    <header>
+        <a href="/Html/home.html"><button class="btn-header">Retornar</button></a>
+    </header>
+    <main>
+<div class="container-simulator">
+    <h1>Simulação de envio</h1>
+    <form action="simulator.html">
+        <div>
+            <label>Tamanho do pacote:</label><br>
+            <input id="smallPackage" type="radio" name="package"> Pequeno (~5kg) | 
+            <input id="mediumPpackage" type="radio" name="package"> Médio (~10kg) | 
+            <input id="largePackage" type="radio" name="package"> Grande (~50kg) | 
+        </div>
+        <div>
+            <label>Método de entrega:</label><br>
+            <input id="vehicle01" type="radio" name="vehicle"> Bicicleta - Pacotes pequenos | 
+            <input id="vehicle02" type="radio" name="vehicle"> Motocicleta - Pacotes pequenos e médios | 
+            <input id="vehicle03" type="radio" name="vehicle"> Carro - Pacotes grandes | 
+        </div>
+        <div>
+            <label>Prazo da entrega:</label><br>
+            <input id="internalRegion" type="radio" name="local"> Região interno na cidade| 
+            <input id="externalRegion" type="radio" name="local"> Região externa da cidade | 
+            <input id="outRegion" type="radio" name="local"> Cidades vizinhas | 
+        </div>
+        <div>
+            <button type="button" onclick="calcular()">Calcular envio</button><br>
+        </div>
+    </form>
+    <div>
+        <h3>Pacote:<span id="outputPackage"></span></h3>
+        <h3>Entrega:<span id="outputVehicle"></span></h3>
+        <h3>Prazo:<span id="outputRegion"></span></h3>
+        <h3>Total:<span id="outputTotal"></span></h3>
+    </div>
+
+</div>
+    </main>
+    <script src="/app/simulator.js"></script>
+</body>
+
+</html>
